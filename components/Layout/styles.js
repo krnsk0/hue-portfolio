@@ -10,12 +10,4 @@ export default {
       flex-direction: row;
     }
   `,
-  navbarContainer: css`
-    display: flex;
-
-    ${mediaQuery('md')} {
-      min-width: 340px;
-      flex-direction: column;
-    }
-  `,
 };

@@ -10,8 +10,8 @@ const Layout = ({ navbar, main }) => {
       <ThemeProvider theme={theme}>
         <Global styles={globalStyles} />
         <div css={styles.pageContainer}>
-          <div css={styles.navbarContainer}>{navbar}</div>
-          <div>{main}</div>
+          {navbar}
+          {main}
         </div>
       </ThemeProvider>
     </>

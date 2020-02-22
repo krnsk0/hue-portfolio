@@ -2,7 +2,7 @@ import styles from './styles';
 
 const Navbar = () => {
   return (
-    <>
+    <div css={styles.navbarContainer}>
       <img src="/logo.png" alt="logo with text HUE art" css={styles.logo}></img>
       <nav css={styles.navLinksContainer}>
         <ul>
@@ -11,7 +11,7 @@ const Navbar = () => {
           <li>About</li>
         </ul>
       </nav>
-    </>
+    </div>
   );
 };
 
