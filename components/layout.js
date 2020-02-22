@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import '../styles/main.css';
 
 const Layout = props => {
   return <>{props.children}</>;
