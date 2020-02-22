@@ -14,7 +14,7 @@ export default {
     display: flex;
 
     ${mediaQuery('md')} {
-      max-width: 340px;
+      min-width: 340px;
       flex-direction: column;
     }
   `,
