@@ -1,6 +1,6 @@
 const mediaQuery = size => {
   const bp = {
-    sm: 425,
+    sm: 600,
     md: 800,
     lg: 1024,
     xl: 1440,
