@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Image } from 'cloudinary-react';
+import ImageLoader from '../ImageLoader';
 import styles from './styles';
 
 const Main = ({ gallery }) => {
@@ -7,17 +7,11 @@ const Main = ({ gallery }) => {
     <div css={styles.mainContainer}>
       {gallery.map(({ public_id }) => {
         return (
-          <Image
+          <ImageLoader
+            publicID={public_id}
+            cssProp={styles.image}
             key={public_id}
-            publicId={public_id}
-            alt="HUE profile logo"
-            fetchFormat="auto"
-            quality="auto"
-            dpr="auto"
-            width="auto"
-            responsiveUseBreakpoints="true"
-            responsive
-            css={styles.image}
+            alt="gallery image"
           />
         );
       })}
