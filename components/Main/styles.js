@@ -3,6 +3,7 @@ import { mediaQuery } from '../../emotion';
 
 export default {
   mainContainer: css`
+    column-gap: 1em;
     ${mediaQuery('sm')} {
       column-count: 2;
       column-width: 50%;

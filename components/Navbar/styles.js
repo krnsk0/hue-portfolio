@@ -4,6 +4,7 @@ import { mediaQuery } from '../../emotion';
 export default {
   navbarContainer: css`
     display: flex;
+    margin: 0 0 1em 0;
 
     ${mediaQuery('md')} {
       min-width: 340px;
@@ -11,7 +12,6 @@ export default {
     }
   `,
   logo: css`
-    margin: 1em;
     width: calc(50% - 2em);
     min-width: 148px;
 
@@ -24,7 +24,19 @@ export default {
     }
   `,
   navLinksContainer: css`
-    margin: 1em;
+    margin: 0 0 0 1em;
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    ${mediaQuery('md')} {
+      margin: 1em 0 0 0;
+    }
+  `,
+  navLink: css`
+    ${mediaQuery('md')} {
+    }
   `,
 };

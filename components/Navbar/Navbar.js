@@ -4,11 +4,11 @@ const Navbar = () => {
   return (
     <div css={styles.navbarContainer}>
       <img src="/logo.png" alt="logo with text HUE art" css={styles.logo}></img>
-      <nav css={styles.navLinksContainer}>
-        <ul>
-          <li>Illustration</li>
-          <li>Comics</li>
-          <li>About</li>
+      <nav>
+        <ul css={styles.navLinksContainer}>
+          <li css={styles.navLink}>Illustration</li>
+          <li css={styles.navLink}>Comics</li>
+          <li css={styles.navLink}>About</li>
         </ul>
       </nav>
     </div>
