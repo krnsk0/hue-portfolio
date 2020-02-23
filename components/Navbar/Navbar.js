@@ -3,7 +3,8 @@ import styles from './styles';
 const Navbar = () => {
   return (
     <div css={styles.navbarContainer}>
-      <img src="/logo.png" alt="logo with text HUE art" css={styles.logo}></img>
+      <img src="/profile.png" alt="" css={styles.logoPicture}></img>
+
       <nav>
         <ul css={styles.navLinksContainer}>
           <li css={styles.navLink}>Illustration</li>

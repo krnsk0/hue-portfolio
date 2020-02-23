@@ -11,16 +11,16 @@ export default {
       flex-direction: column;
     }
   `,
-  logo: css`
-    width: calc(50% - 2em);
-    min-width: 148px;
+
+  logoPicture: css`
+    max-width: 25%;
 
     ${mediaQuery('sm')} {
-      max-width: 224px;
+      max-width: 160px;
     }
 
     ${mediaQuery('md')} {
-      width: calc(100% - 2em);
+      max-width: 60%;
     }
   `,
   navLinksContainer: css`
