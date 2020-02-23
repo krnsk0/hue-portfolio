@@ -1,19 +1,32 @@
+import PropTypes from 'prop-types';
+import { Image } from 'cloudinary-react';
 import styles from './styles';
 
-const Main = () => {
+const Main = ({ gallery }) => {
   return (
     <div css={styles.mainContainer}>
-      <img src="/1.png" alt="logo with text HUE art" css={styles.image}></img>
-      <img src="/9.png" alt="logo with text HUE art" css={styles.image}></img>
-      <img src="/2.png" alt="logo with text HUE art" css={styles.image}></img>
-      <img src="/6.png" alt="logo with text HUE art" css={styles.image}></img>
-      <img src="/4.png" alt="logo with text HUE art" css={styles.image}></img>
-      <img src="/8.png" alt="logo with text HUE art" css={styles.image}></img>
-      <img src="/3.png" alt="logo with text HUE art" css={styles.image}></img>
-      <img src="/5.png" alt="logo with text HUE art" css={styles.image}></img>
-      <img src="/7.png" alt="logo with text HUE art" css={styles.image}></img>
+      {gallery.map(({ public_id }) => {
+        return (
+          <Image
+            key={public_id}
+            publicId={public_id}
+            alt="HUE profile logo"
+            fetchFormat="auto"
+            quality="auto"
+            dpr="auto"
+            width="auto"
+            responsiveUseBreakpoints="true"
+            responsive
+            css={styles.image}
+          />
+        );
+      })}
     </div>
   );
+};
+
+Main.propTypes = {
+  gallery: PropTypes.array.isRequired,
 };
 
 export default Main;

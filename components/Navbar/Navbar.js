@@ -1,10 +1,20 @@
+import { Image } from 'cloudinary-react';
 import styles from './styles';
 
 const Navbar = () => {
   return (
     <div css={styles.navbarContainer}>
-      <img src="/profile.png" alt="" css={styles.logoPicture}></img>
-
+      <Image
+        publicId="profile_jhi460"
+        css={styles.logoPicture}
+        alt="HUE profile logo"
+        fetchFormat="auto"
+        quality="auto"
+        dpr="auto"
+        width="auto"
+        responsiveUseBreakpoints="true"
+        responsive
+      />
       <nav>
         <ul css={styles.navLinksContainer}>
           <li css={styles.navLink}>Illustration</li>
