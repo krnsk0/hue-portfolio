@@ -8,6 +8,9 @@ export default {
       column-count: 2;
       column-width: 50%;
     }
+    ${mediaQuery('md')} {
+      margin-left: 24em;
+    }
     ${mediaQuery('xl')} {
       column-count: 3;
       column-width: 33%;

@@ -7,8 +7,9 @@ export default {
     margin: 0 0 1em 0;
 
     ${mediaQuery('md')} {
-      min-width: 340px;
-      flex-direction: column;
+      display: block;
+      max-width: 24em;
+      position: fixed;
     }
   `,
 
