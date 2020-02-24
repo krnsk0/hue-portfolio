@@ -5,7 +5,6 @@ import Main from '../components/Main';
 import fetch from 'isomorphic-unfetch';
 
 const Index = ({ gallery }) => {
-  console.log(gallery);
   return <Layout navbar={<Navbar />} main={<Main gallery={gallery} />} />;
 };
 
