@@ -21,13 +21,23 @@ export default {
       max-width: 24em;
     }
   `,
-  navbarSpacer: css``,
-
-  logoPicture: css`
-    max-width: 25%;
+  navbarSpacer: css`
+    height: calc(92px - 1em);
 
     ${mediaQuery('sm')} {
-      max-width: 160px;
+      height: calc(132px - 1em);
+    }
+
+    ${mediaQuery('md')} {
+      height: 0px;
+    }
+  `,
+
+  logoPicture: css`
+    max-width: 60px;
+
+    ${mediaQuery('sm')} {
+      max-width: 100px;
     }
 
     ${mediaQuery('md')} {
