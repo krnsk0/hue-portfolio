@@ -2,16 +2,26 @@ import { css } from '@emotion/core';
 import { mediaQuery } from '../../emotion';
 
 export default {
-  navbarContainer: css`
+  navbarContainer: theme => css`
+    background-color: ${theme.colors.lightGrey1};
+    position: fixed;
+    top: 0;
+    left: 0;
     display: flex;
     margin: 0 0 1em 0;
+    z-index: 999;
+    width: 100%;
+    padding: 1em 0 1em 1em;
 
     ${mediaQuery('md')} {
       display: block;
+      top: 2em;
+      left: 2em;
+
       max-width: 24em;
-      position: fixed;
     }
   `,
+  navbarSpacer: css``,
 
   logoPicture: css`
     max-width: 25%;
