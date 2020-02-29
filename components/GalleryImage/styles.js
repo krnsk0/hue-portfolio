@@ -3,6 +3,7 @@ import { mediaQuery } from '../../emotion';
 
 export default {
   mainContainer: css`
+    border: 1px solid red;
     width: 100%;
     ${mediaQuery('sm')} {
     }
