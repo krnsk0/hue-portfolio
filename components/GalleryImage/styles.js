@@ -2,14 +2,19 @@ import { css } from '@emotion/core';
 import { mediaQuery } from '../../emotion';
 
 export default {
-  mainContainer: css`
+  galleryImageContainer: css`
+    position: relative;
+
+    border: 1px red solid;
     width: 100%;
+    height: calc(95vh - 92px - 1em);
+
     ${mediaQuery('sm')} {
+      height: calc(95vh - 132px - 1em);
     }
     ${mediaQuery('md')} {
       margin-left: 24em;
-    }
-    ${mediaQuery('xl')} {
+      height: 90vh;
     }
   `,
   image: css`

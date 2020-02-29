@@ -17,8 +17,8 @@ export default {
       display: block;
       top: 2em;
       left: 2em;
-
       max-width: 24em;
+      padding: 0 0 0 0;
     }
   `,
   navbarSpacer: css`

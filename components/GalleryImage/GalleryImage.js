@@ -16,7 +16,7 @@ const GalleryImage = ({ slug, gallery }) => {
   };
 
   return (
-    <div css={styles.mainContainer}>
+    <div css={styles.galleryImageContainer}>
       <ImageLoader
         publicID={public_id}
         cssProp={styles.image}
