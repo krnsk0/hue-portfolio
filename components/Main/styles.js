@@ -26,4 +26,7 @@ export default {
     height: 1em;
     break-inside: avoid-column;
   `,
+  spacerContainer: css`
+    break-inside: avoid-column;
+  `,
 };

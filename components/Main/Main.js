@@ -16,18 +16,17 @@ const Main = ({ gallery }) => {
         };
 
         return (
-          <>
+          <div key={slug} css={styles.spacerContainer}>
             <ImageLoader
               publicID={public_id}
               cssProp={styles.image}
               alt="gallery image"
               width={width}
               height={height}
-              key={slug}
               onInteract={onInteract}
             />
             <div css={styles.spacer}></div>
-          </>
+          </div>
         );
       })}
     </div>
