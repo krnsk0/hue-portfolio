@@ -18,8 +18,12 @@ export default {
     }
   `,
   image: css`
-    margin: 0 0 0.5em 0;
     width: 100%;
     cursor: pointer;
+  `,
+  spacer: css`
+    width: 100%;
+    height: 1em;
+    break-inside: avoid-column;
   `,
 };

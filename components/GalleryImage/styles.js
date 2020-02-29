@@ -14,7 +14,7 @@ export default {
     }
   `,
   image: css`
-    margin: 0 0 0.5em 0;
+    margin: 0 0 0 0;
     width: 100%;
   `,
 };
