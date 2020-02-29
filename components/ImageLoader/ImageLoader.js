@@ -1,8 +1,16 @@
 import { Image } from 'cloudinary-react';
+
 import PropTypes from 'prop-types';
 import styles from './styles';
 
-const ImageLoader = ({ publicID, cssProp, alt, width = 0, height = 0 }) => {
+const ImageLoader = ({
+  publicID,
+  cssProp,
+  alt,
+  width = 0,
+  height = 0,
+  onInteract,
+}) => {
   return (
     <div
       css={theme => styles.placeholderWrapper(theme, (height / width) * 100)}
@@ -17,6 +25,8 @@ const ImageLoader = ({ publicID, cssProp, alt, width = 0, height = 0 }) => {
         width="auto"
         crop="scale"
         css={cssProp}
+        onClick={onInteract}
+        tabIndex={0}
       />
     </div>
   );
@@ -28,6 +38,7 @@ ImageLoader.propTypes = {
   alt: PropTypes.string.isRequired,
   width: PropTypes.number,
   height: PropTypes.number,
+  onInteract: PropTypes.func,
 };
 
 export default ImageLoader;
