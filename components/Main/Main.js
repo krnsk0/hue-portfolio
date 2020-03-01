@@ -12,7 +12,9 @@ const Main = ({ gallery }) => {
         const slug = public_id.split('/')[1];
 
         const onInteract = () => {
-          router.push(router.pathname, `/gallery/${slug}`, { shallow: true });
+          router
+            .push(router.pathname, `/gallery/${slug}`, { shallow: true })
+            .then(() => window.scrollTo(0, 0));
         };
 
         return (

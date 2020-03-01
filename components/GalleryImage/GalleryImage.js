@@ -11,7 +11,9 @@ const GalleryImage = ({ slug, gallery }) => {
   );
 
   const onInteract = () => {
-    router.push(`/gallery`, `/gallery`, { shallow: true });
+    router
+      .push(`/gallery`, `/gallery`, { shallow: true })
+      .then(() => window.scrollTo(0, 0));
   };
 
   return (
