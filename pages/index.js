@@ -15,8 +15,6 @@ const Index = ({ gallery }) => {
   const slug =
     lastUrlChunk === 'gallery' || lastUrlChunk === '' ? '' : lastUrlChunk;
 
-  console.log('gallery', gallery);
-
   const gallerySorted = [...gallery];
 
   gallerySorted.sort(
