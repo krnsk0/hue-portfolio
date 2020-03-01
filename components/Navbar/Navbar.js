@@ -1,5 +1,6 @@
 import { Image } from 'cloudinary-react';
 import styles from './styles';
+import { FaInstagram, FaMoon, FaAt, FaHamsa } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
@@ -15,11 +16,28 @@ const Navbar = () => {
           crop="scale"
           css={styles.logoPicture}
         />
-        <nav>
-          <ul css={styles.navLinksContainer}>
-            <li css={styles.navLink}>Illustration</li>
-            <li css={styles.navLink}>Comics</li>
-            <li css={styles.navLink}>About</li>
+
+        <nav css={styles.navLinksContainer}>
+          <div css={styles.name}>
+            <strong>Hannah Utain-Evans</strong>
+          </div>
+          <ul>
+            <li css={styles.navLink}>
+              <FaHamsa />
+              About
+            </li>
+            <li css={styles.navLink}>
+              <FaMoon />
+              Webcomic
+            </li>
+            <li css={styles.navLink}>
+              <FaInstagram />
+              Insta
+            </li>
+            <li css={styles.navLink}>
+              <FaAt />
+              Contact
+            </li>
           </ul>
         </nav>
       </div>

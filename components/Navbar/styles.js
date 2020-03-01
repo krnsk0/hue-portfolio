@@ -32,7 +32,6 @@ export default {
       height: 0px;
     }
   `,
-
   logoPicture: css`
     max-width: 60px;
 
@@ -44,6 +43,7 @@ export default {
       max-width: 60%;
     }
   `,
+  name: css``,
   navLinksContainer: css`
     margin: 0 0 0 1em;
     width: 100%;
