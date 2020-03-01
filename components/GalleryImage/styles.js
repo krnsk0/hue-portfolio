@@ -4,8 +4,6 @@ import { mediaQuery } from '../../emotion';
 export default {
   galleryImageContainer: css`
     position: relative;
-
-    border: 1px red solid;
     width: 100%;
     height: calc(95vh - 92px - 1em);
 

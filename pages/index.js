@@ -15,14 +15,22 @@ const Index = ({ gallery }) => {
   const slug =
     lastUrlChunk === 'gallery' || lastUrlChunk === '' ? '' : lastUrlChunk;
 
+  console.log('gallery', gallery);
+
+  const gallerySorted = [...gallery];
+
+  gallerySorted.sort(
+    (a, b) => Number(a.context.custom.order) - Number(b.context.custom.order)
+  );
+
   return (
     <Layout
       navbar={<Navbar />}
       main={
         !slug ? (
-          <Main gallery={gallery} />
+          <Main gallery={gallerySorted} />
         ) : (
-          <GalleryImage slug={slug} gallery={gallery} />
+          <GalleryImage slug={slug} gallery={gallerySorted} />
         )
       }
     />
@@ -34,6 +42,7 @@ Index.getInitialProps = async () => {
     'https://res.cloudinary.com/hueartdump/image/list/gallery.json'
   );
   const data = await res.json();
+
   return {
     gallery: data.resources,
   };

@@ -4,7 +4,6 @@ import ImageLoader from '../ImageLoader';
 import styles from './styles';
 
 const GalleryImage = ({ slug, gallery }) => {
-  console.log('slug: ', slug);
   const router = useRouter();
 
   const { public_id, width, height } = gallery.find(info =>
