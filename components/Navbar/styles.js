@@ -45,6 +45,15 @@ export default {
   `,
   name: css`
     font-family: 'Trade Winds';
+    font-size: 1em;
+
+    ${mediaQuery('sm')} {
+      font-size: 1.5em;
+    }
+
+    ${mediaQuery('md')} {
+      font-size: 2em;
+    }
   `,
   navLinksContainer: css`
     margin: 0 0 0 1em;
