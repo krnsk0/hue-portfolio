@@ -13,6 +13,10 @@ const Layout = ({ navbar, main }) => {
       <Head>
         <title>HUE Art Dump</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link
+          href="https://fonts.googleapis.com/css?family=Playfair+Display|Trade+Winds&display=swap"
+          rel="stylesheet"
+        ></link>
       </Head>
       <CloudinaryContext cloudName="hueartdump">
         <ThemeProvider theme={theme}>

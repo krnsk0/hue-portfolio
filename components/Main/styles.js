@@ -10,7 +10,7 @@ export default {
       column-width: 50%;
     }
     ${mediaQuery('md')} {
-      margin-left: 24em;
+      margin-left: 20em;
     }
     ${mediaQuery('xl')} {
       column-count: 3;

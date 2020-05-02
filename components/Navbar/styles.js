@@ -17,7 +17,7 @@ export default {
       display: block;
       top: 2em;
       left: 2em;
-      max-width: 24em;
+      max-width: 20em;
       padding: 0 0 0 0;
     }
   `,
@@ -43,21 +43,31 @@ export default {
       max-width: 60%;
     }
   `,
-  name: css``,
+  name: css`
+    font-family: 'Trade Winds';
+  `,
   navLinksContainer: css`
     margin: 0 0 0 1em;
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
 
     ${mediaQuery('md')} {
+      flex-direction: column;
       margin: 1em 0 0 0;
     }
   `,
-  navLink: css`
+  navLink: theme => css`
+    font-family: 'Playfair Display';
     ${mediaQuery('md')} {
     }
+
+    &:hover {
+      color: ${theme.colors.accent};
+      content: 'test';
+    }
   `,
+  navLinkText: css``,
 };

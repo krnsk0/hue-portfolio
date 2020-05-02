@@ -17,26 +17,26 @@ const Navbar = () => {
           css={styles.logoPicture}
         />
 
-        <nav css={styles.navLinksContainer}>
+        <nav>
           <div css={styles.name}>
-            <strong>Hannah Utain-Evans</strong>
+            <strong>Hannah UE</strong>
           </div>
-          <ul>
+          <ul css={styles.navLinksContainer}>
             <li css={styles.navLink}>
               <FaHamsa />
-              About
+              <span css={styles.navLinkText}>About</span>
             </li>
             <li css={styles.navLink}>
               <FaMoon />
-              Webcomic
+              <span css={styles.navLinkText}>Webcomic</span>
             </li>
             <li css={styles.navLink}>
               <FaInstagram />
-              Insta
+              <span css={styles.navLinkText}>Instagram</span>
             </li>
             <li css={styles.navLink}>
               <FaAt />
-              Contact
+              <span css={styles.navLinkText}>Contact</span>
             </li>
           </ul>
         </nav>
